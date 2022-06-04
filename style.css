@@ -1,0 +1,319 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 1rem;
+}
+
+header,
+footer {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+#btn-header,
+#btn-footer {
+    border: none;
+    border-radius: 28px;
+    color: white;
+    font-size: 1rem;
+    font-weight: 700;
+    padding: 0.625rem 1.5rem;
+    transition: all 200ms ease-in-out;
+}
+
+.logo {
+    width: 111.17px;
+}
+
+#btn-header {
+    background-color: #13183F;
+    ;
+}
+
+#btn-header:hover {
+    background-color: #666CA3;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #13183F;
+    padding: 2.25rem 1rem;
+}
+
+#btn-footer {
+    background-image: linear-gradient(180deg, #4851FF -54.32%, #F02AA6 100%);
+    position: relative;
+    transition: all 200ms ease-in-out;
+    z-index: 1;
+}
+
+
+/* button {
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+    background: #13183F;
+    border-radius: 28px;
+} */
+
+
+/* Main section */
+
+main {
+    padding: 1.375rem 1rem 0 1rem;
+    margin-bottom: 120px;
+}
+
+main h1 {
+    color: #13183F;
+    font-size: 2.5rem;
+    font-weight: 800;
+}
+
+main p {
+    color: #83869A;
+    padding: 1.625rem 0 1.5rem 0;
+    line-height: 1.625rem;
+}
+
+main #btn-main {
+    background-image: linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%);
+    border: none;
+    border-radius: 31.5px;
+    color: white;
+    font-size: 1rem;
+    font-weight: 700;
+    padding: 1rem 2.375rem;
+    position: relative;
+    transition: all 200ms ease-in-out;
+    z-index: 1;
+}
+
+#btn-main:hover {
+    cursor: pointer;
+}
+
+main #btn-main::before {
+    background-color: rgba(255, 255, 255, 0.5);
+    bottom: 0;
+    content: "";
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: opacity 200ms ease-in-out;
+    z-index: -1;
+}
+
+main #btn-main:hover::before {
+    opacity: 1;
+}
+
+main #img-main {
+    /* background-image: url(./assets/image-hero-mobile@2x.png); */
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 0;
+    padding-top: 92.05%;
+}
+
+
+/* Grid section */
+
+#grid-section {
+    background: linear-gradient(180deg, #FFFFFF 0%, #F0F1FF 100%);
+    padding: 0 1rem 5rem 1rem;
+}
+
+#grid-section #check-out-card {
+    background-image: linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%);
+    border-radius: 10px;
+    color: white;
+    padding: 1.5rem 1.75rem 2rem 1.75rem;
+}
+
+#grid-section #check-out-card h2 {
+    font-size: 1.5rem;
+    font-weight: 800;
+    line-height: 2rem;
+}
+
+
+/* Service card layout */
+
+.service-card {
+    background-color: white;
+    border-radius: 10px;
+    margin-top: 2.5rem;
+    padding: 3.5rem 1.75rem 2rem 1.75rem;
+    position: relative;
+}
+
+.service-card .service-icon {
+    left: 1.75rem;
+    position: absolute;
+    top: -23px;
+}
+
+.service-card h3 {
+    color: var#13183F;
+    font-size: 1.25rem;
+    font-weight: 800;
+}
+
+.service-card p {
+    color: #83869A;
+    line-height: 1.625rem;
+    padding: 1rem 0 1.5rem 0;
+}
+
+.service-card a {
+    color: #F74780;
+    font-weight: 700;
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    text-decoration: none;
+    transition: all 200ms ease-in-out;
+}
+
+.service-card a:hover {
+    color: #FFA7C3;
+}
+
+
+/* Tablet design */
+
+@media (min-width: 576px) {
+    /* body, html {
+    overflow-x: hidden;
+  } */
+    /* Header and footer layout */
+    header {
+        padding: 1.5rem 2.5rem 0 2.5rem;
+    }
+    footer {
+        padding: 2.25rem 2.5rem;
+    }
+    /* Main section */
+    main {
+        overflow: hidden;
+        padding: 6.1875rem 350px 11.625rem 2.5rem;
+        position: relative;
+    }
+    main #img-main {
+        /* background-image: url(./assets/image-hero-tablet@2x.png); */
+        height: 640px;
+        position: absolute;
+        right: -270px;
+        top: -80px;
+        width: 640px;
+        z-index: -1;
+    }
+    /* Grid section */
+    #grid-section {
+        column-gap: 0.625rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 0 2.5rem 5.375rem 2.5rem;
+    }
+    #grid-section #check-out-card {
+        padding: 3.5rem 1.75rem 0 1.75rem;
+    }
+    .service-card {
+        display: flex;
+        flex-direction: column;
+        margin-top: 3.5rem;
+    }
+    .service-card a {
+        margin-top: auto;
+    }
+    #animation-card {
+        margin-top: 0;
+    }
+}
+
+
+/* Desktop design */
+
+@media (min-width: 992px) {
+    /* Header and footer layout */
+    header {
+        padding: 1.5rem 10.3125rem 0 10.3125rem;
+    }
+    footer {
+        padding: 2rem 10.3125rem;
+    }
+    #btn-header,
+    #btn-footer {
+        font-size: 1.125rem;
+        padding: 0.875rem 2rem;
+    }
+    .logo {
+        width: 114px;
+    }
+    /* Main section */
+    main {
+        padding: 11.125rem 680px 14.125rem 10.3125rem;
+    }
+    main h1 {
+        font-size: 3.5rem;
+    }
+    main p {
+        font-size: 1.125rem;
+        line-height: 1.75rem;
+        padding: 1.875rem 0 2.5rem 0;
+    }
+    main #btn-main {
+        font-size: 1.125rem;
+        padding: 0.875rem 2rem;
+    }
+    main #img-main {
+        background-image: url(./assets/image-hero-desktop@2x.png);
+        height: 937px;
+        right: -358px;
+        top: -146px;
+        width: 992px;
+    }
+    /* Grid section */
+    #grid-section {
+        column-gap: 1.875rem;
+        grid-template-columns: 1fr 1fr 1fr;
+        padding: 0 10.3125rem 8.75rem 10.3125rem;
+    }
+    #grid-section #check-out-card {
+        padding: 4rem 2rem;
+    }
+    #grid-section #check-out-card h2 {
+        font-size: 2rem;
+        line-height: 2.5rem;
+    }
+    /* Service card layout */
+    .service-card {
+        margin-top: 5rem;
+        padding: 4rem 2rem 2.5rem 2rem;
+    }
+    .service-card .service-icon {
+        left: 2rem;
+    }
+    .service-card h3 {
+        font-size: 1.5rem;
+    }
+    .service-card p {
+        font-size: 1.125rem;
+        line-height: 1.75rem;
+        padding: 1.5rem 0;
+    }
+    #design-card {
+        margin-top: 0;
+    }
+}
