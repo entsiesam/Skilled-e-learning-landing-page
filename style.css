@@ -55,16 +55,6 @@ footer {
 }
 
 
-/* button {
-    left: 0%;
-    right: 0%;
-    top: 0%;
-    bottom: 0%;
-    background: #13183F;
-    border-radius: 28px;
-} */
-
-
 /* Main section */
 
 main {
@@ -119,7 +109,7 @@ main #btn-main:hover::before {
 }
 
 main #img-main {
-    /* background-image: url(./assets/image-hero-mobile@2x.png); */
+    background-image: url(./assets/image-hero-mobile@2x.png);
     background-size: contain;
     background-repeat: no-repeat;
     width: 100%;
@@ -166,7 +156,7 @@ main #img-main {
 }
 
 .service-card h3 {
-    color: var#13183F;
+    color: #13183F;
     font-size: 1.25rem;
     font-weight: 800;
 }
@@ -194,9 +184,6 @@ main #img-main {
 /* Tablet design */
 
 @media (min-width: 576px) {
-    /* body, html {
-    overflow-x: hidden;
-  } */
     /* Header and footer layout */
     header {
         padding: 1.5rem 2.5rem 0 2.5rem;
@@ -211,7 +198,7 @@ main #img-main {
         position: relative;
     }
     main #img-main {
-        /* background-image: url(./assets/image-hero-tablet@2x.png); */
+        background-image: url(./assets/image-hero-tablet@2x.png);
         height: 640px;
         position: absolute;
         right: -270px;
